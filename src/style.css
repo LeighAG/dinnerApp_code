@@ -1,0 +1,1139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{margin: 0;}
+@viewport {
+  max-width: 100vw;
+}
+html,
+body {
+  /* position: relative; */
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+overflow-x: hidden;
+}
+
+body{
+    background-color: #f7f7f7;
+    border:none;
+    box-sizing: border-box;
+  }
+  
+  #root{
+   height: 100vh;
+   width: 100vw;
+    display: flex;
+    flex-flow: column;
+  }
+
+ 
+a {
+    color: #31c0e4;
+    text-decoration: unset;
+}
+
+button,
+input[type='submit'] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h4, h5, h6, ul, ol, p {
+margin: 0 auto;
+}
+
+/* general */
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.page {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+.page h1{ margin: 5rem auto;}
+.page h3{padding-top: 2rem}
+
+.responsive-reg {
+  position: relative;
+  top: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+.responsive-reg h1{ margin: 5rem auto;}
+.responsive-reg h3{padding-top: 2rem}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* header */
+
+#footer{
+  display: flex;
+  height: 2rem;
+  background-color: #805e86;
+  position: fixed;
+  bottom:0;
+  width: 100vw;
+
+  
+}
+
+#footer h4{
+  color: #ffffff;
+  font-weight: lighter;
+ margin-left: 45%;
+position: absolute;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: #805e86;
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#header .title {
+    margin: 0;
+    padding: 0 1rem;
+    color: #ffffff;
+}
+
+#header .auth-options, .options{
+    height: 100%;
+    display: flex;
+}
+
+#header .auth-options button{
+    padding: 0 1rem;
+    background-color: #805e86;
+    color: #ffffff;
+    font-size: 1.1 rem;
+}
+
+#header .auth-options button:hover{
+    background-color: #3d1a3b;
+}
+
+.options button{
+    padding: 0 1rem;
+    background-color: #805e86;
+    color: #ffffff;
+    font-size: 1.1 rem;
+}
+
+.options button:hover{
+    background-color: #3d1a3b;
+}
+
+/*create page*/
+
+.createContainer{
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: relative;
+  top: 4rem;
+
+}
+
+
+
+/*form*/
+.page h2{
+ padding-top: 2rem;
+ 
+}
+
+.form  label, 
+.form input {
+display: block;
+margin: auto;
+ }
+
+.form input {
+    margin-bottom: 1rem;
+    width: auto;
+     }
+    
+.form label{
+        margin-bottom: .2rem;
+        width:fit-content;
+         }
+
+.form input[type='text'], 
+.form input[type='email'],
+.form input[type='password']{
+    width: 50%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border: 1px solid #818181;
+    background-color: #e6e5e5;
+    border-radius: 8px;
+}
+
+.form input:focus{
+    border: 1px solid #6378f0;
+    box-shadow: inset 0px 0px 5px  #6378f0;
+    outline: none;
+}
+
+.form input[type="submit"]{
+    padding: .3rem .5rem;
+    border: 1px solid #805e86;
+    background-color: #c7dbb6;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+
+/*error note*/
+
+.error-notice{
+    border: 1px solid #640a0a;
+    background-color: #eb9b9b;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-notice button{
+    background-color: #994242;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+/* Create Dinner Plan Page */
+
+/* calendar */
+.dateChoiceError{
+  position: absolute;
+  top: 4rem;
+  color: #ad0d0d;
+}
+
+.create {
+    margin: 7rem auto 0 auto;
+    border-radius:15px;
+    border: 2px solid;
+    border-color: #3f3f44;
+    display: flex;
+   flex-flow: column;
+    position: relative;
+    height: 18rem;
+    width: 28rem;
+    background-color:#c8c7db;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .createDatesContainer{
+display: flex;
+flex-flow: column;
+align-content: center;
+height: 100vh;
+  }
+
+  .createTitle{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    margin: auto;
+    top: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .createTitle h2{
+    padding-bottom: 0px;
+  }
+
+ 
+  .borderCalendar{
+    position:relative;
+    height: 100%;
+    width: 100vw;
+  text-align: center;
+  display: flex ;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  }
+
+  .addDate button{
+    height: 2rem;
+    width: 12rem;
+    border: solid 2px black;
+    background-color: #079743;
+    border-radius: 15px;
+    color: #ffffff;
+  }
+
+  .dateMissing {
+      position: absolute;
+      top: 4rem;
+      color: #ad0d0d;
+  }
+/* form */
+.formContain{
+ 
+      height: auto;
+    width: 100vw;
+  text-align: center;
+  display: flex ;
+  flex-flow: column;
+  align-items: center;
+  
+  }
+  
+  .formContain h1, h2{
+    margin: .5rem auto;
+    padding: .5rem;
+  }
+
+  /* .dinnerContainer{
+    width: 80vw;
+    padding-bottom: 5rem;
+    position: relative;
+    margin: 3rem auto 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    grid-template-rows: auto;
+      grid-gap: 8px;
+   
+  } */
+  
+   .formTemplate form{
+     display: flex;
+     flex-direction: column;
+      position: block;
+      width: 40rem;
+      margin: 20px auto 20px auto;
+      background-color:#c8c7db;
+      padding: 15px;
+      border-radius: 7px;
+      border: solid 2px black;
+      /* box-shadow: 0 1px 5px rgb(138, 137, 137); */
+    }
+
+    .formTemplate select {
+        width: 10rem;
+       align-self: center;
+       margin: .5rem;
+      }
+    .formTemplate input {
+        width: 20rem;
+       align-self: center;
+       margin: .5rem;
+      }
+      
+
+      .formTemplate button{
+        height: 2rem;
+        width: 12rem;
+        border: solid 2px black;
+    background-color: #805e86;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: bold;
+        align-self: center;
+      }
+
+.textRows{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+     
+      .textSplitRows{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .textSplitRows textarea{
+        position: relative;
+        width: 45%;
+        margin: 0 .5rem .3rem .3rem;
+        
+      }
+     
+
+      .textFullRows {
+        margin: 0 auto;
+      }
+
+      .textFullRows textarea{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+      }
+/* start dinner containers*/
+
+
+.container {
+
+  display:grid;
+  row-gap: .5rem;
+  column-gap: .5rem;
+  grid-template-areas:
+'names names'
+'buttons recipe'
+'buttons recipe';
+grid-template-rows: 30% 40% 40%;
+grid-template-columns: 4rem 1fr;
+  justify-content: space-between;
+    margin: 0;
+    height: 12rem;
+    width: 15rem; 
+    background-color:#62a3f7;
+    border-radius:15px;
+      border: 2px solid;
+      border-color: #3f3f44;
+      text-align: center;
+      position: relative;
+      padding: 0 .5rem 1rem .5rem;
+    }
+
+    .names{
+      grid-area: names;
+      display: flex;
+      justify-content: space-around;
+     color: white;
+    }
+
+    .names h4{
+      position: relative;
+      width: 50%;
+      overflow-y: auto;
+  overflow-wrap: break-word;
+  margin-top:1rem;
+    }
+    .containerButtons{
+      grid-area: buttons;
+display: flex;
+position: relative;
+flex-flow: column;
+justify-content: space-evenly;
+margin: 0;
+height: 80%;
+width: 100%;
+}
+
+   button.deleteButton{
+     position: relative;
+      border: 2px solid black;
+     padding: 0rem; 
+      border-radius: 15px;
+      background-color: #581ef5;
+      height: 20%;
+      width: 100%;
+     margin: 0 .2rem;;
+} 
+  
+    button.openButton{
+      position: relative;
+      border: 2px solid black;
+     padding: 0rem; 
+      border-radius: 15px;
+      background-color: #581ef5;
+      height: 20%;
+      width: 100%;
+margin: 0 .2rem;
+    }
+
+    .openButton  p{
+      color:#ffffff;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .deleteButton  p{
+      color:#ffffff;
+      margin: auto;
+    }
+
+.containerItems{
+  grid-area: recipe;
+position: relative;
+width: 90%;
+height: 70%;
+display: flex;
+
+ justify-content: center; 
+align-items: center ;
+background-color: #c8c7db;
+overflow-y: auto;
+  overflow-wrap: break-word;
+  font-weight: bold;
+  padding: .5rem;
+  border-radius: 15px;
+} 
+
+
+.container .containerItems h3 {
+  position: relative;
+  margin: 0;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  height: 50%;
+  width: 100%;
+}
+
+
+
+/*Modal*/
+#modal-root{
+ 
+}
+    .modal {
+        position: absolute;
+        top: 5px;
+        right: 70%;
+       left: 30%;
+        display:flex;
+        flex-flow: column;
+        /* align-content: center; */
+      
+        padding: 12px;
+       height: 28rem;
+      width: 40%;
+        
+        background-color:#FFFDD0;
+        border: 3px solid grey;
+        z-index: 1;
+        /* overflow-wrap: break-word; */
+        word-wrap: break-word;
+        /* word-break: break-all; */
+        word-break: break-word;
+        /* hyphens: auto; */
+        border-radius: 15px;
+      }
+
+   .modalOverflow {
+     height: 30%;
+     white-space: pre-line;
+     overflow-y: auto;
+     overflow-wrap: break-word;
+     border: 3px solid grey;
+     margin-top:1rem;
+     margin-bottom: .5rem;
+   }
+      
+.closeBtn{
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    bottom: 0;
+    height: auto;
+    width: 10rem;
+    margin: 1.5rem 0 1rem 0;
+    /* padding: 0rem; */
+    border: 3px solid grey;
+    background-color: #805e86;
+    color: white;
+    border-radius: 50px;
+  }
+
+  /*dinner containers*/
+
+  .dinnerContainer{
+    width: 50rem;
+
+    padding-bottom: 5rem;
+    position: relative;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    grid-template-rows: auto;
+      grid-gap: 8px;
+   
+  }
+
+  h1.dinnerTitle {
+    margin: 7rem auto 1rem auto;
+  }
+
+/* Lists */
+
+.linkDelete{
+  display: flex;
+ border-bottom: 3px dashed rgb(168, 168, 168);
+}
+
+.linkDelete h3{font-size: 20px;}
+.linkDelete button { 
+  background-color: #e79aa5;
+  margin-right: 1rem;
+  height: fit-content;
+  padding: .5rem;
+  border-radius: 15px;
+  margin: auto 20px auto 0;
+}
+.listTitle{
+  margin: 5rem auto 0 auto;
+}
+
+.fullList{
+  margin: 1rem auto 0 auto;
+}
+
+  /*Archive*/
+.formTemplate form{
+  margin: 1px auto;
+}
+
+  .archiveAndReturn{
+    width: 40rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .archive{
+
+    position: relative;
+    width: 100%;
+    height: .7rem;
+    background-color: #079743;
+    color: white;
+    border: solid 3px black;
+    border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     margin: 0 0 1rem 0;
+     padding: 1rem 0 1rem 0;
+   }
+
+   .goBack{
+    position: absolute;
+    left: 0;
+display: flex;
+justify-content: center;
+    width: 6rem;
+    height: 3rem;
+    background-color: #e9f0b1;
+    color:black;
+    border: solid 3px black;
+    border-radius: 50px;
+  margin: .5rem 0 0 .5rem;
+  }
+
+.archive h3{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.goBack h3{
+  margin:  0 auto; 
+  padding: 0;
+}
+
+ /*containerArchive*/
+ .containAll{
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-flow: column;
+}
+  .containerArch {
+display:grid;
+  row-gap: .5rem;
+  column-gap: .5rem;
+  grid-template-areas:
+'namesArch namesArch'
+'recipeArch recipeArch';
+grid-template-rows: 30% 70%;
+    margin: 0;
+    height: 12rem;
+    width: 15rem;
+    background-color:#b19cd9;
+    border-radius:15px;
+      border: 2px solid;
+      border-color: #3f3f44;
+      text-align: center;
+      position: relative;
+  }
+.namesArch{
+  grid-area: namesArch;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.namesArch h3{
+  margin: 0;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  /* height: auto-fit; */
+}
+
+.recipeArch{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  grid-area: recipeArch;
+  background-color: beige;
+  height: 80%;
+  width: 90%;
+}
+  
+
+  .containButtons button{
+    position: relative;
+    width: 100%;
+    background-color: thistle;
+    border-radius: 15px;
+   border: 1px solid black;
+  } 
+  .containButtons button h3{
+margin: 0.5rem 0;
+  }
+
+  .containButtons {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 auto;
+height: 120px;
+width: 100%;
+  }
+  /* edit_archive_notes */
+.archWN{
+  position: relative;
+  height: 80%;
+}
+
+.archWN h3{
+  margin: 1rem;
+}
+  .editNotesContainer {
+    background-color: white;
+  }
+
+  .textB{
+    position: relative;
+    height: 6rem;
+    width: 100%;
+    overflow-wrap: break-word;
+    border: 2px solid green;
+  }
+ 
+ .textOverflow{
+   position: relative;
+  white-space: pre-line;
+  height: 6rem;
+  width: 100%;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  background-color: #ffffff;
+  border: 1px solid black;
+ }
+
+
+ button.editNoteB{
+   position: relative;
+   background-color: thistle;
+   /* padding: .5rem; */
+   border-radius: 50px;
+   border: 1px solid black;
+   width: 50%;
+   height: auto;
+   margin:0 auto;
+ }
+
+ .closeBtnArch{
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  bottom: 0;
+  height: 3rem;
+  width: 20rem;
+  margin: 1.5rem 0 5px 0;
+  /* padding: 0rem; */
+  border: 3px solid grey;
+  background-color: #805e86;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;}
+
+  .saveEdits{
+    background-color: blue;
+    color: white;
+    width: 40%;
+    height: 8%;
+    margin: 2px auto 10px auto;
+    border-radius: 15px;
+    border: 1px solid black;
+
+  }
+
+  .notfound{
+    position: relative;
+   top: 20rem;
+    margin:  0 auto;
+    text-align: center;
+  }
+
+/*editDinnerPlan*/
+
+.dinnerFullContainer{
+  /* height: 100vh; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: relative;
+ 
+}
+.editDinnerPlanBtn{
+margin: 0 auto .5rem auto;
+width: 43rem;
+padding: 1rem;
+border-radius: 15px;
+border: 3px solid black;
+background-color: #e9f0b1;
+font-weight: bolder;
+}
+
+.editArchive{
+  position: relative;
+  width: 43rem;
+  height: .7rem;
+  background-color: #079743;
+  color: white;
+  border: solid 3px black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem auto;
+  padding: 1rem 0 1rem 0;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 770px){
+  .dinnerContainer {
+    width: 30rem;
+    padding-bottom: 5rem;
+    position: relative;
+    /* left:1.8rem; */
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+
+.notfound{
+  position: relative;
+  top:10rem;
+  margin:  0 auto;
+  text-align: center;
+}
+.formContain h1{
+ font-size: 1.7rem;
+}
+.goBack{
+margin: 2px 0 0 1px;
+}
+
+.containButtons{
+  margin: 0 auto ;
+}
+
+}
+
+@media screen and (max-width: 570px){
+
+  .containButtons{
+    margin: 0 auto ;
+    height: auto;
+  }
+
+    #header .title {
+        font-size: 1.2rem;
+    }
+
+    #footer h4{
+      font-size: .8rem;
+      margin: 5px 0 auto 30%;
+    }
+
+    .responsive-reg{
+      position: relative;
+      top: 4rem;
+      text-align: center;
+      height:auto;
+    }
+
+    .responsive-reg h2{
+      margin: 1rem 0 1rem 0;
+      padding: 0px;
+      padding-bottom: 0;
+    }
+
+    .responsive-reg h3{
+      font-size: 1rem;
+     padding: 0;
+    }
+  .page h1{
+    margin:5rem auto;
+   text-align: center;
+  }
+
+  .page h2{
+    font-size: 1rem; 
+    padding-bottom: 3rem;}
+
+    .page h3{
+      font-size: 1.5rem; 
+      padding-bottom: 3rem;}
+
+    .create {
+      margin: 5rem auto 0 auto;
+      border-radius:15px;
+      border: 2px solid;
+      border-color: #3f3f44;
+      display: flex;
+     flex-flow: column;
+      position: relative;
+      height: 16rem;
+      width: 14rem;
+      background-color:#c8c7db;
+      padding: 1rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+.create h1{
+  font-size:1rem;
+  padding-top: .5rem;
+}
+
+.responsive-calendar {
+  font-size: 7px;
+}
+
+.createTitle h1{
+  font-size:1.2rem;
+}
+
+.formTemplate form{
+  display: flex;
+  flex-direction: column;
+   position: block;
+   width: 15rem;
+   height: auto;
+   background-color:#c8c7db;
+   padding: 15px;
+   border-radius: 7px;
+   border: solid 2px black;
+ }
+
+ .textSplitRows{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+.textSplitRows textarea{
+  position: relative;
+  width: 100%;
+  margin: 0 .5rem .3rem .3rem;
+  padding: 0;
+}
+.formContain {
+  /* position: relative;
+  height: auto; */
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+
+.formContain h1, h2{
+  font-size: .7rem;
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+
+.textFullRows textarea{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.archiveAndReturn {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.archive{
+
+  position: relative;
+  width: 100%;
+  height: .1rem;
+  background-color: #079743;
+  color: white;
+  border: solid 3px black;
+  border-radius: 15px;
+   display: flex;
+align-items: center;
+   margin: 0 1px 1rem auto;
+   padding: 1rem 0 1rem 0;
+   
+ }
+
+
+ .goBack{
+  position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 1.8rem;
+  height: .1rem;
+  background-color: #e9f0b1;
+  color:black;
+  border: solid 3px black;
+  border-radius: 15px;
+  margin: 1px auto 0 1px;
+  padding: 1rem 0 1rem 0;
+}
+ .archive h3{font-size: .8rem; margin: auto;}
+ .goBack h3{font-size: .5rem; font-weight:bold; margin: auto;}
+
+
+ .dinnerContainer{
+  width: 80%;
+  padding-bottom: 5rem;
+  position: relative;
+  /* margin: 0; */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+  grid-template-rows: auto;
+    grid-gap: 8px;
+ 
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.modal {
+  position: absolute;
+margin-top: 30px;
+margin-right: 6rem;
+  display:flex;
+  flex-flow: column;
+  /* padding: 12px; */
+ height: 28rem;
+width: 50%;
+  background-color:#FFFDD0;
+  border: 3px solid grey;
+  z-index: 1;
+  word-wrap: break-word;
+  word-break: break-word;
+  border-radius: 15px;
+}
+
+.listTitle{
+  font-size:1.3rem;
+  margin: 4rem auto 0 auto;
+padding: 1rem;
+text-align: center;
+}
+
+h1.dinnerTitle {
+  font-size:1.3rem;
+  padding: 0 1rem 1rem 1rem;
+  margin: 4.5rem auto 0 auto;
+  text-align: center;
+}
+
+button.editNoteB{
+  position: relative;
+  background-color: thistle;
+  /* padding: .5rem; */
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 80%;
+  height: auto;
+  margin:0 auto 0 1rem;
+}
+
+.editNoteB h3{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.closeBtnArch{
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  bottom: 0;
+  height: 2rem;
+  width: 10rem;
+  margin: 1.5rem 0 5px 0;
+  /* padding: 0rem; */
+  border: 3px solid grey;
+  background-color: #805e86;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;}
+
+  .notfound{
+    margin: 7rem auto;
+    text-align: center;
+  }
+
+  /*edit*/
+  .editDinnerPlanBtn{
+    position: relative;
+    width: 15rem;
+  }
+
+  .editArchive{
+    
+    width: 15rem;
+  }
+
+}

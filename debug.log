@@ -1,0 +1,20 @@
+[0905/083008.787:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0905/083008.807:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083008.813:ERROR:exception_snapshot_win.cc(99)] thread ID 24844 not found in process
+[0905/083008.814:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0905/083008.814:ERROR:exception_snapshot_win.cc(99)] thread ID 8044 not found in process
+[0905/083009.197:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.204:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.205:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.205:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.205:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.206:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.206:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0905/083009.207:ERROR:exception_snapshot_win.cc(99)] thread ID 22904 not found in process
+[0905/083009.278:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.278:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.278:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.279:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.279:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.279:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0905/083009.279:ERROR:exception_snapshot_win.cc(99)] thread ID 13884 not found in process

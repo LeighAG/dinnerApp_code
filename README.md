@@ -1,3 +1,5 @@
+Authenticatiaon portion coded along to: https://youtu.be/4_ZiJGY5F38
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
